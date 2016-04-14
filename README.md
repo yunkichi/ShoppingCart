@@ -1,0 +1,7 @@
+# ShoppingCart
+
+## Installation
+
+```
+composer install
+```
