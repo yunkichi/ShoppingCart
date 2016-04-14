@@ -1,0 +1,18 @@
+{
+    "name": "okapon/ShoppingCart",
+    "description": "work sample",
+    "homepage": "https://github.com/okapon/ShoppingCart",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.3.*",
+        "phake/phake": "2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ShoppingCart\\": "src"
+        }
+    }
+}
