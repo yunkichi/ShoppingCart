@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="shopping cart" default="build" basedir=".">
+  <property name="source" value="./"/>
+
+  <target name="clean" description="Clean up and create artifact directories">
+    <delete dir="${basedir}/build/coverage"/>
+
+    <mkdir dir="${basedir}/build/coverage"/>
+  </target>
+
+  <target name="phpunit" description="Run unit tests using PHPUnit and generates junit.xml and clover.xml">
+    <exec executable="phpunit" failonerror="true">
+      <arg line="-c ${basedir}/phpunit.xml.dist --coverage-html ${basedir}/build/coverage" />
+    </exec>
+  </target>
+
+  <target name="build" depends="clean, phpunit"/>
+</project>
